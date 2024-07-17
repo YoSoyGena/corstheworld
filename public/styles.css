@@ -13,8 +13,16 @@ body {
   min-height: 100vh;
 }
 
+a {
+  color: #2aa022;
+}
+
+a:hover {
+  color: #58df4e;
+}
+
 header {
-  background-color: #11ff00;
+  background-color: #2aa022;
   color: white;
   padding: 1rem 0;
   text-align: center;
