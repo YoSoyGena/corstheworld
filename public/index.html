@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proxy Server Documentation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Proxy Server</h1>
+        <p>Your tool for forwarding requests to any URL.</p>
+    </header>
+    <main>
+        <section>
+            <h2>Usage</h2>
+            <p>To use the proxy, make a request to <code>/proxy/</code> with the following parameters:</p>
+            <ul>
+                <li><code>url</code>: The target URL to proxy the request to (required).</li>
+                <li>All other request parameters (method, headers, body) will be forwarded to the target URL.</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Example Form</h2>
+            <form id="proxyForm">
+                <label for="targetUrl">Target URL:</label>
+                <input type="url" id="targetUrl" name="url" required>
+                <button type="submit">Send Request</button>
+            </form>
+            <pre id="responseOutput"></pre>
+        </section>
+    </main>
+    <footer>
+        <p>Hecho con ❤️ por <a href="https://yosoygena.tech/" target="_blank">YoSoyGena</a></p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
