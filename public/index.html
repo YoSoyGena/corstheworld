@@ -29,26 +29,6 @@
                     </li>
                 </ul>
             </section>
-            <section>
-                <h2>Example Form</h2>
-                <form id="proxyForm">
-                    <label for="targetUrl">Target URL:</label>
-                    <input type="url" id="targetUrl" name="url" required />
-                    <label for="method">Method:</label>
-                    <select id="method" name="method" required>
-                        <option value="GET">GET</option>
-                        <option value="POST">POST</option>
-                        <option value="PUT">PUT</option>
-                        <option value="DELETE">DELETE</option>
-                    </select>
-                    <label for="headers">Headers (JSON format):</label>
-                    <textarea id="headers" name="headers" rows="4"></textarea>
-                    <label for="body">Body:</label>
-                    <textarea id="body" name="body" rows="4"></textarea>
-                    <button type="submit">Send Request</button>
-                </form>
-                <pre id="responseOutput"></pre>
-            </section>
         </main>
         <footer>
             <p>
